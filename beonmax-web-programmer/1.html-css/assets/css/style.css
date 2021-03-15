@@ -216,6 +216,130 @@ ul.menu li a:hover {
 	font-size: 0.8em;
 }
 
+.info_film_page{
+  margin-top: 2%;
+  margin-bottom: 4%;
+}
+
+.info_film_page .lable{
+  font-size: 1.2em;
+}
+
+.info_film_page .value{
+  font-size: 1em;
+  color: #49945a;
+  margin-right: 3%;
+}
+
+.description_film{
+  margin-bottom: 15%;
+}
+
+.description_film img{
+  float: left;
+  margin-right: 2%;
+  border-radius: 5px;
+  border: solid 5px #dad7d5;
+}
+
+.reviews{
+  margin-bottom: 4%;
+  font-size: 0.9em;
+}
+
+.reviews .review_name{
+  background-color: #7268ad;
+  color: #fff;
+  padding: 1%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.reviews .review_text{
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 2%;
+}
+
+.send {
+  margin-bottom: 4%;
+}
+
+.send input[type="text"], textarea {
+  border: solid 1px #c3c3c3;
+  margin-bottom: 2%;
+}
+
+.send input[type="text"] {
+  width: 98%;
+}
+
+.send textarea {
+  width: 624px;
+  height: 200px;
+}
+
+.send input[type="submit"] {
+  background-color: #7268ad;
+  padding: 3%;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.info_film {
+  margin-bottom: 5%;
+  background-color: #f9f9f9;
+  padding: 5%;
+  height: 270px;
+}
+
+.info_film img {
+  float: left;
+  margin-right: 2%;
+  border-radius: 5px;
+  border: solid 5px #dad7d5;
+  width: 25%;
+}
+
+.button {
+  background-color: #7268ad;
+  padding: 2%;
+  color: #fff;
+  border-radius: 5px;
+  float: right;
+  margin-top: 5%;
+  clear: both;
+  font-size: 0.8em;
+}
+
+.button a {
+  color: #fff;
+}
+
+table {
+  width: 100%;
+  border: solid 1px #f4f4f4;
+}
+
+td {
+  padding: 2%;
+  border: solid 1px #f4f4f4;
+}
+
+td img {
+  width: 60px;
+  vertical-align: middle;
+}
+
+.center {
+  text-align: center;
+}
+
+.rating {
+  font-weight: bold;
+}
+
+
 .footer a {
 	color: #a8aa94;
 	text-decoration: none;
@@ -230,4 +354,153 @@ ul.menu li a:hover {
 	padding: 0 0 10px 0;
 }
 
+
+
+/* CSS Mobile */
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+
+  .header {
+    background-color: #257965;
+    min-width: 100%;
+    height: 20%;
+    text-align: center;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  .site_content {
+    width: 100%;
+  }
+
+  .menubar {
+    width: 100%;
+    height: 100%;
+  }
+
+  .content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .site_content { 
+    width: 100%;
+    text-align: center;
+  }
+  
+  .sidebar_container {
+    display: none;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  ul.menu {
+    float: none;
+  }
+
+  ul.menu li {
+    margin: 0;
+    padding: 0;
+    float: none;
+  }
+
+  .logo h1 {
+    font: normal 235% 'century gothic', arial, sans-serif;
+  }
+
+  .logo h2 {
+    font: normal 100% 'century gothic', arial, sans-serif;
+    color:white;
+  }
+
+  .content h1, h2 {
+    font: normal 110% 'century gothic', arial;
+  }
+
+  .films_block img {
+    width: 43%;
+  }
+
+  .posts_content p {
+    line-height: 1.5em;
+    padding: 3%;
+    text-align: left;
+  }
+
+  .posts p {
+    font-size: 120%;
+  }
+
+  /* fimls page */
+  .info_film {
+    float:none;
+    height: 100%;
+  }
+
+  .info_film img {
+    width: 90%;
+    margin-bottom: 5%;
+  }
+
+  .button {
+    float: none;
+  }
+
+  /* rating page */
+  table {
+    display: block;
+  }
+
+  th {
+    font-size: 75%;
+  }
+
+  td {
+    padding: 0;
+    margin: 0;
+    font-size: 95%;
+    text-align: left;
+  }
+
+  /* show page */
+  iframe {
+    width: 88%;
+    height: 100%;
+  }
+
+  .description_film {
+    width: 90%;
+    text-align: left;
+    margin-left: 2%;
+  }
+  
+  .description_film img {
+    float: none;
+    width: 73%;
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-left: 11%;
+    margin-bottom: 7%;
+  }
+
+  .reviews {
+    text-align: left;
+    width: 96%;
+  }
+
+  .send input[type="text"] {
+    width: 80%;
+  }
+
+  .send textarea {
+    width: 85%;
+  }
+}
 
