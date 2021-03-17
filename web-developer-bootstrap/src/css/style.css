@@ -4,13 +4,14 @@
 
 header {
 	position: relative;
+	height: 50px;
 }
 
 nav {
 	height: 50px;
 	background-color: #212121;
-	/* position: fixed; */
-	/* width: 100%; */
+	position: fixed;
+	width: 100%;
 }
 
 .menu {
@@ -37,7 +38,7 @@ nav {
 
 .subheader {
 	position: absolute;
-	/* top: 50px; */
+	top: 50px;
 	width: 100%;
 	height: 87px;
 	background: rgba(0, 0, 0, .6 );
@@ -74,7 +75,6 @@ nav {
 	text-align: right;
 	text-transform: uppercase;
 	color: #FFFFFF;
-	/* line-height: 12px; */
 }
 
 .subheader .subheader_btn {
@@ -153,19 +153,22 @@ nav {
 	margin: 118px auto 0 auto;
 }
 
-.advantages .advantages_btn {
-	display: block;
+.advantages {
+	padding: 71px 0 65px 0;
+}
+
+.advantages .advantages_lable {
 	margin: 18px auto 0 auto;
 	width: 115px;
 	height: 27px;
 	background: #000000;
 	font-style: normal;
-	font-weight: normal;
+	font-weight: 300;
 	font-size: 11px;
 	text-align: center;
 	text-transform: uppercase;
 	color: #FFFFFF;
-	mix-blend-mode: normal;
+	padding: 5px 12px;
 }
 
 .advantages .advantages_header {
@@ -178,35 +181,42 @@ nav {
 	margin-top: 33px;
 }
 
-/* .advantages .advantages_block {
+.advantages .advantages_block {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-} */
+	padding: 0 20px;
+}
 
 .advantages .advantages_round {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	max-width: 116px;
+	min-width: 116px;
 	height: 116px;
 	border-radius: 50%;
 	background: #1EACC7;
+	margin-right: 25px;
 }
 
 .advantages .advantages_descr {
-	padding-right: 0;
+	width: 343px;
 }
 
 .advantages .advantages_descr .advantages_descr_header {
 	font-style: normal;
-	font-weight: normal;
-	font-size: 19px;
+	font-weight: 400;
+	font-size: 17px;
 	color: #1EACC7;
+	margin: 0;
+	line-height: 21px;
 }
 
 .advantages .advantages_descr .advantages_descr_text {
+	color: #202020;
 	font-style: normal;
-	font-weight: normal;
-	font-size: 17px;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 21px;
 }
