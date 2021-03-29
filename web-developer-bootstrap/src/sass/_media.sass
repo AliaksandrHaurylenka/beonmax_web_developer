@@ -91,3 +91,103 @@
 			font-size: 20px
 	.opportunity img.car
     	max-width: 100%;
+	.hamburger
+		display: block
+		position: absolute
+		right: 10px
+		top: 50%
+		transform: translateY(-50%)
+		width: 26px
+		height: 12px
+		span 
+			display: block 
+			height: 2px
+			width: 100%
+			background-color: #fff 
+			margin-bottom: 2px
+			transition: 0.5s all
+		&_active 
+			span 
+				margin-bottom: -2px 
+				&:nth-child(1)
+					transform: translateY(3px) rotate(-45deg)
+				&:nth-child(2)
+					display: none
+				&:nth-child(3)
+					transform: translateY(3px) rotate(45deg)
+	.xs-hidden
+		display: none
+	.xs-visible 
+		display: block
+	.subheader
+		&_phone 
+			display: block 
+			margin-top: 10px
+			color: #ffffff
+			font-size: 16px
+			font-weight: 400
+			text-transform: uppercase
+			text-align: center
+		&_btn 
+			display: block
+			width: 200px
+			height: 40px
+			margin: 0 auto
+			margin-top: 5px
+	.promo
+		&_header 
+			line-height: 45px
+
+
+@media (max-width: 575px)
+	nav 
+		height: 30px
+	header 
+		height: 30px
+	.subheader
+		height: 60px
+		top: 30px
+		&_official 
+			display: none
+		&_logo 
+			margin-top: 16px
+		&_phone 
+			font-size: 12px
+			margin-top: 9px
+		&_btn 
+			width: 110px
+			height: 22px
+			font-size: 9px
+			margin-top: 3px
+			&:hover
+				background-image: linear-gradient(to top, $azure 0%, #4ce2ff 100%)
+	.promo 
+		min-height: 400px
+		padding: 93px 0 35px 0
+		&_descr
+			display: none
+		&_header
+			font-size: 30px
+			padding: 0 11px
+			line-height: 35px
+		&_subheader
+			font-size: 19px
+			margin-top: 33px
+			padding: 0 10px
+			line-height: 30px
+		&_btn 
+			width: 210px
+			height: 50px
+			margin-top: 72px
+			font-size: 16px
+			&:hover
+				background-image: linear-gradient(to top, $azure 0%, #4ce2ff 100%)
+	.menu 
+		width: 85%
+	.advantages
+		padding: 22px 0 36px 0
+		&_block 
+			margin-top: 26px
+	.title
+		font-size: 15px
+		margin-top: 18px
