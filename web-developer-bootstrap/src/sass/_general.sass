@@ -282,7 +282,7 @@ nav
 	position: relative
 	min-height: 905px
 	.black_bg
-		height: 499px
+		min-height: 499px
 		background: $black_1
 		padding-top: 56px
 		.lable
@@ -309,6 +309,8 @@ nav
 			text-align: center
 			color: #222222;
 			margin: 0
+	.visible-320
+		display: none
 
 .require
 	padding: 68px 0 84px 0
@@ -354,7 +356,7 @@ nav
 					background: url('../img/chek_red.png') center (center / cover) no-repeat
 
 .world
-	min-height: 716px
+	height: 716px
 	background: url('../img/world.jpg') center (center / cover) no-repeat
 	padding: 48px 0 50px 0
 	.lable
@@ -378,13 +380,12 @@ footer
 		padding-left: 23px
 	&_menu
 		text-align: center
-		ul
-			display: flex
-			justify-content: space-around
-			padding: 0
-			list-style: none
-			margin: 0
 	&_menu_top, &_menu_bottom
+		display: flex
+		justify-content: space-around
+		padding: 0
+		list-style: none
+		margin: 0
 		font-weight: 300
 		text-transform: uppercase
 	&_menu_top a
