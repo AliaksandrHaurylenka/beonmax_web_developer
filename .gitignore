@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/Webdev2019
 
 # testing
 /coverage
