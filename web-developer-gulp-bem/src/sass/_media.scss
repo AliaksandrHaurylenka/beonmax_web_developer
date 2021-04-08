@@ -27,6 +27,13 @@
             margin-top: 30px;
         }
     }
+
+
+    .catalog {
+        &__content {
+            justify-content: space-around;
+        }
+    }
     
 }
 
@@ -89,6 +96,23 @@
             width: 100%;
         }
     }
+
+    .title {
+        font-size: 27px;
+    }
+
+    .catalog {
+        &__tabs {
+            margin-top: 20px;
+        }
+        &__tab {
+            width: 160px;
+            font-size: 16px;
+        }
+        &__content {
+            margin-top: 30px;
+        }
+    }
 }
 
 
@@ -148,6 +172,27 @@
         }
         &__descr {
             font-size: 17px;
+        }
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    .catalog {
+        &__tabs {
+            flex-direction: column;
+        }
+        &__tab {
+            margin: 7px 0;
+            transform: none;
+            width: 250px;
+            div {
+                transform: none;
+            }
+        }
+        &-item {
+            width: 285px;
         }
     }
 }
