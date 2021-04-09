@@ -1,20 +1,22 @@
 $(document).ready(function(){
-    $('.carousel__inner').slick({
-        speed: 1200,
-        // adaptiveHeight: true,
-        // autoplay: true,
-        prevArrow: '<button type="button" class="slick-prev"><img src="icons/left.svg"></button>',
-        nextArrow: '<button type="button" class="slick-next"><img src="icons/right.svg"></button>',
-        responsive: [
-            {
-                breakpoint: 992,
-                settings: {
-                    dots: true,
-                    arrows: false
-                }
+
+    $(".owl-carousel").owlCarousel({
+        items: 1,
+        autoplay: true,
+        loop: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        navText: ['<button type="button" class="owl-prev"><img src="icons/left.svg"></button>',
+        '<button type="button" class="owl-next"><img src="icons/right.svg"></button>'],
+        responsiveClass:true,
+        responsive:{
+            1200:{
+                nav:true,
+                dots: false
             }
-        ]
+        }
     });
+     
 
 
     $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
