@@ -29,6 +29,18 @@
     }
 
 
+    .carousel {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .slick-slide img {
+        display: block;
+    }
+
+
     .catalog {
         &__content {
             justify-content: space-around;
