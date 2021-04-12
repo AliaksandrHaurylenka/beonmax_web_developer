@@ -125,6 +125,18 @@
             margin-top: 30px;
         }
     }
+
+
+    .reviews {
+        &-item {
+            &__comment {
+                margin-left: 30px;
+            }
+            &__review {
+                font-size: 15px;
+            }
+        }
+    }
 }
 
 
@@ -192,6 +204,7 @@
     }
 
     .catalog {
+        padding-bottom: 30px;
         &__tabs {
             flex-direction: column;
         }
@@ -205,6 +218,27 @@
         }
         &-item {
             width: 285px;
+        }
+    }
+
+    .reviews {
+        &-item {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+            &__comment {
+               text-align: center;
+               margin-top: 30px;
+               margin-left: 0;
+            }
+        }
+    }
+
+    footer {
+        .footer {
+            &__addr {
+                padding: 0 10px;
+            }
         }
     }
 }
