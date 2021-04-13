@@ -241,4 +241,17 @@
             }
         }
     }
+
+    .modal {
+        padding-left: 0;
+        padding-right: 0;
+        width: 300px;
+        .button {
+            border-radius: 0;
+        }
+        &__close {
+            top: 5px;
+            right: 5px;
+        }
+    }
 }
