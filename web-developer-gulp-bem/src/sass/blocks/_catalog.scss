@@ -108,6 +108,7 @@
             color: #050505;
         }
         &__wrapper {
+            position: relative;
             display: flex;
             width: calc(200% + 40px);
         }
@@ -122,7 +123,7 @@
             }
         }
         &__list {
-            position: relative;
+            // position: relative;
             width: 50%;
             margin-left: 20px;
             transform: translateX(0%);
