@@ -5,11 +5,14 @@
 }
 
 .grid-container {
-
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 60px 70px 100px;
+    gap: 20px 40px;
 }
 
 .grid-elem {
-    height: 50px;
+    /* height: 50px; */
     background-color: rgba(1, 1, 96, 1);
     color: #fff;
     line-height: 50px;
