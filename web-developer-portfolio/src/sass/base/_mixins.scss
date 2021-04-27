@@ -1,13 +1,21 @@
-@mixin befor_circle {
+@mixin befor_circle($left, $top) {
     &::before {
         content: "";
         position: absolute;
-        left: 0;
-        top: -25%;
+        left: $left;
+        top: $top;
         width: 36px;
         height: 36px;
         border-radius: 50%;
         z-index: -1;
         background: $main-color;
     }
+}
+
+@mixin line {
+    position: absolute;
+    top: 60px;
+    width: 60px;
+    height: 3px;
+    background-color: $main-color;
 }

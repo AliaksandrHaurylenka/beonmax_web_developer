@@ -1,0 +1,49 @@
+.about-me {
+    padding-top: 120px;
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-auto-rows: minmax(300px, auto);
+        gap: 60px;
+    }
+    &__subtitle {
+        padding-left: 12px;
+        position: relative;
+        z-index: 2;
+        @include befor_circle(0, -25%);
+    }
+    & .underline-title {
+        position: relative;
+    }
+    &-line {
+        @include line;
+    }
+    &__descr {
+        margin-top: 28px;
+    }
+    &-skills {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px 150px;
+        margin-top: 40px;
+        &-block {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            &-img {
+                padding-left: 12px;
+                position: relative;
+                z-index: 2;
+                @include befor_circle(-15%, -56%);
+                margin-top: 15px;
+            }
+            &-info {
+                padding-left: 20px;
+            }
+        }
+        &__descr {
+            margin-top: 6px;
+        }
+        
+    }
+}
