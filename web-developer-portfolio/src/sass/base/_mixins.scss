@@ -1,4 +1,4 @@
-@mixin befor_circle($left, $top) {
+@mixin before_circle($left, $top) {
     &::before {
         content: "";
         position: absolute;
