@@ -1,16 +1,5 @@
 .resume {
     padding-top: 156px;
-    &__title {
-        position: relative;
-        text-align: center;
-        @include before_circle(50%, -50%);
-        &:before {
-            transform: translate(-50%, 18%);
-        }  
-    }
-    &__subtitle {
-        text-align: center;
-    }
     .divider {
         margin: 25px auto 0;
     }
@@ -45,7 +34,7 @@
                     content: "";
                     position: absolute;
                     width: 1px;
-                    height: 100%;
+                    height: calc(100% + 16px);
                     background-color: $title-color;
                     left: 0;
                     top: -16px
@@ -55,6 +44,16 @@
     }
     &__item {
         padding-top: 45px;
+        position: relative;
+            &:before {
+                position: absolute;
+                content: '';
+                height: 1px;
+                width: 53px;
+                background-color: $title-color;
+                top: 64px;
+                left: -34px;
+            }
         &-location {
             line-height: 2px;
         }
