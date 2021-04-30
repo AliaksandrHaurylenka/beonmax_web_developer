@@ -1,0 +1,579 @@
+<div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title h4-responsive w-100 font-weight-bold font">Бриф на создание сайта</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="tab">
+          <p class="font-large">Выявление полного спектра требований и пожеланий клиента к разрабатываемому сайту – достаточно длительный процесс. К счастью, его можно заметно ускорить, сводя к минимуму разговоры и существенно экономя Ваше время. С этой целью мы предлагаем Вам заполнить бриф на создание сайта.</p>
+
+          <p><strong>Бриф</strong> - это своего рода анкета, с помощью которой Вы сможете отобразить свои требования и пожелания к сайту, который Вы хотите заказать. Заполнив бриф, Вы не только лишний раз проанализируете будущий проект, но и будете четко представлять себе его окончательный вид. Качественно заполненный бриф – экономит массу времени, расходуемое, как правило, на  согласовании деталей.</p>
+
+          <blockquote class="blockquote bq-color-site">
+            <p><em>Пожалуйста, отвечайте на вопросы развернуто, в свободной форме, внимательно вчитываясь в каждый вопрос. На основе этого брифа будет составлено техническое задание, являющееся приложением договора, по которому будет вестись работа над Вашим проектом.</em></p>
+          </blockquote>
+          <blockquote class="blockquote bq-color-site">
+            <p><em>Помните! Сделать действительно точную оценку стоимости услуг можно только после получения подробного описания задачи на создание сайта с перечнем всех самых важных моментов и требований, которые разработчику следует учитывать. От того, насколько детально будет поставлена задача исполнителю, напрямую зависит как качество результата, так и душевное спокойствие сторон в процессе работы.</em></p>
+          </blockquote>
+        </div>
+
+        <form id="regForm" action="" method="post">
+          <!-- 1 -->
+          <div class="tab">
+            <h4 class="h4-responsive w-100">1. Информация о компании</h4>
+            <div class="md-form mb-5">
+              <i class="fas fa-building prefix grey-text"></i>
+              <input type="text" id="form1" class="form-control" name="name-company">
+              <label for="form1">Название компании</label>
+            </div>
+              
+            <div class="md-form mb-5">
+              <i class="fas fa-user prefix grey-text"></i>
+              <input type="text" id="form2" class="form-control" name="name">
+              <label for="form2">Представитель компании (заказчик)</label>
+            </div>
+            
+            <div class="md-form mb-5">  
+              <i class="fas fa-envelope prefix grey-text"></i>
+              <input type="email" id="form3" class="form-control" name="email">
+              <label for="form3">Email</label>
+            </div>
+
+            <div class="md-form mb-5">  
+              <i class="fas fa-phone-alt prefix grey-text"></i>
+              <input type="tel" id="form4" class="form-control" name="phone">
+              <label for="form4">Телефон</label>
+            </div>
+
+            <div class="md-form mb-5">  
+              <i class="fas fa-sitemap prefix grey-text"></i>
+              <input type="url" id="form5" class="form-control" name="address-site">
+              <label for="form5">Существующий сайт (если есть)</label>
+            </div>
+
+            <div class="md-form mb-5">  
+              <i class="fas fa-map-marked-alt prefix grey-text"></i>
+              <input type="url" id="form6" class="form-control" name="planned-address-site">
+              <label for="form6">Планируемый адрес сайта</label>
+            </div>
+
+            <div class="md-form mb-5">  
+              <i class="fas fa-calendar-alt prefix grey-text"></i>
+              <input type="date" id="form7" class="form-control" name="desired-project-completion-date">
+              <label for="form7">Желаемая дата сдачи проекта</label>
+            </div>
+          </div>
+
+
+         <!-- 2 -->
+         <div class="tab">
+          <h4 class="h4-responsive w-100">2. Информация об услугах</h4>
+
+          <h5 class="h5-responsive">Целевая группа воздействия</h5>
+          <div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="defaultChecked1" name="auditoriumGroup[]" value="A">
+              <label class="custom-control-label" for="defaultChecked1">владельцы бизнеса</label>
+            </div>
+
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="defaultChecked2" name="auditoriumGroup[]" value="B">
+              <label class="custom-control-label" for="defaultChecked2">директоры</label>
+            </div>
+
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="defaultChecked3" name="auditoriumGroup[]" value="C">
+              <label class="custom-control-label" for="defaultChecked3">менеджеры</label>
+            </div>
+
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="defaultChecked4" name="auditoriumGroup[]" value="D">
+              <label class="custom-control-label" for="defaultChecked4">технические работник, рабочие</label>
+            </div>
+
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="defaultChecked5" name="auditoriumGroup[]" value="E">
+              <label class="custom-control-label" for="defaultChecked5">научные работники, профессоры, студенты</label>
+            </div>
+
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="defaultChecked6" name="auditoriumGroup[]" value="F">
+              <label class="custom-control-label" for="defaultChecked6">домохозяйки</label>
+            </div>
+
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="defaultChecked7" name="auditoriumGroup[]" value="G">
+              <label class="custom-control-label" for="defaultChecked7">дети</label>
+            </div>
+
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="defaultChecked8" name="auditoriumGroup[]" value="H">
+              <label class="custom-control-label" for="defaultChecked8">все категории общества</label>
+            </div>
+
+            <div>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="defaultCheckedDisabled2" checked disabled>
+                <label class="custom-control-label" for="defaultCheckedDisabled2">другое (описать)</label>
+              </div>
+              <textarea type="text" id="form8" class="md-textarea form-control" rows="2" name="auditoriumGroupOther"></textarea>
+            </div>
+          </div>
+
+          <div class="md-form">
+            <textarea type="text" id="form8" class="md-textarea form-control" rows="2" name="infoAboutProducts"></textarea>
+            <label for="form8">Информация о продуктах</label>
+          </div>
+
+          <div class="md-form">
+            <input type="url" id="form9" class="form-control" rows="2" name="competitors">
+            <label for="form9">Конкуренты в сфере деятельности (ссылки)</label>
+          </div>
+
+          <div class="md-form">
+            <input type="url" id="form10" class="form-control" rows="2" name="companions">
+            <label for="form10">Компаньоны в сфере деятельности (ссылки)</label>
+          </div>
+
+          <div class="md-form">
+            <textarea type="text" id="form11" class="md-textarea form-control" rows="2" name="purpose"></textarea>
+            <label for="form11">Цели создания сайта</label>
+          </div>
+        </div>
+
+
+        <!-- 3 -->
+        <div class="tab">
+          <h4 class="h4-responsive w-100">3. Информация о существующем фирменном стиле (да/нет)</h4>
+
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Наличие (да/нет)</th>
+                <th scope="col">Есть ли исходники (да/нет)</th>                 
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Логитип</th>
+                <td>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="defaultInline1" name="logo" value="Да">
+                    <label class="custom-control-label" for="defaultInline1">Да</label>
+                  </div>
+      
+                  
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="defaultInline2" name="logo" value="Нет">
+                    <label class="custom-control-label" for="defaultInline2">Нет</label>
+                  </div>
+                </td>
+                <td>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="defaultInline3" name="source" value="Да">
+                    <label class="custom-control-label" for="defaultInline3">Да</label>
+                  </div>
+      
+                  
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="defaultInline4" name="source" value="Нет">
+                    <label class="custom-control-label" for="defaultInline4">Нет</label>
+                  </div>
+                </td>
+              </tr>
+
+
+              <tr>
+                <th scope="row">Фирменные цвета</th>
+                <td>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="defaultInline5" name="firm-colors" value="Да">
+                    <label class="custom-control-label" for="defaultInline5">Да</label>
+                  </div>
+      
+                  
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="defaultInline6" name="firm-colors" value="Нет">
+                    <label class="custom-control-label" for="defaultInline6">Нет</label>
+                  </div>
+                </td>
+                <td>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="defaultInline7" name="source" value="Да">
+                    <label class="custom-control-label" for="defaultInline7">Да</label>
+                  </div>
+      
+                  
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="defaultInline8" name="source" value="Нет">
+                    <label class="custom-control-label" for="defaultInline8">Нет</label>
+                  </div>
+                </td>
+              </tr>
+
+
+
+              <tr>
+                <th scope="row">Фирменный стиль</th>
+                <td>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="defaultInline9" name="firm-style" value="Да">
+                    <label class="custom-control-label" for="defaultInline9">Да</label>
+                  </div>
+      
+                  
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="defaultInline10" name="firm-style" value="Нет">
+                    <label class="custom-control-label" for="defaultInline10">Нет</label>
+                  </div>
+                </td>
+                <td>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="defaultInline11" name="source" value="Да">
+                    <label class="custom-control-label" for="defaultInline11">Да</label>
+                  </div>
+      
+                  
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="defaultInline12" name="source" value="Нет">
+                    <label class="custom-control-label" for="defaultInline12">Нет</label>
+                  </div>
+                </td>
+              </tr>
+
+
+              <tr>
+                <th scope="row">Фирменные персонажи, образы</th>
+                <td>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="defaultInline13" name="firm-persons" value="Да">
+                    <label class="custom-control-label" for="defaultInline13">Да</label>
+                  </div>
+      
+                  
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="defaultInline14" name="firm-persons" value="Нет">
+                    <label class="custom-control-label" for="defaultInline14">Нет</label>
+                  </div>
+                </td>
+                <td>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="defaultInline15" name="source" value="Да">
+                    <label class="custom-control-label" for="defaultInline15">Да</label>
+                  </div>
+      
+                  
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="defaultInline16" name="source" value="Нет">
+                    <label class="custom-control-label" for="defaultInline16">Нет</label>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+
+
+        <!-- 4 -->
+        <div class="tab">
+          <h4 class="h4-responsive w-100">4. Какие задачи должен выполнять сайт (да/нет)?</h4>
+          <div class="md-form">
+            <textarea type="text" id="form25" class="md-textarea form-control" rows="1" name="new-clients"></textarea>
+            <label for="form25">Привлечение новых клиентов. (Опишите кратко продукцию. Например: бытовая техника, лекарственные препараты и т.д.)</label>
+          </div>
+
+
+          <div class="md-form">
+            <textarea type="text" id="form26" class="md-textarea form-control" rows="1" name="new-reader"></textarea>
+            <label for="form26">Привлечение новых читателей (для сайта СМИ). (Опишите материалы для читателей, например: статьи для кулинарии, новости и т.д.)</label>
+          </div>
+
+          <div class="md-form">
+            <textarea type="text" id="form27" class="md-textarea form-control" rows="1" name="new-visits"></textarea>
+            <label for="form27">Стимулирование повторных визитов. (За счет чего? Например - за счет постоянного обновления новостей, информации, которая была бы интересна пользователям и т. д.)</label>
+          </div>
+
+          <div class="md-form">
+            <textarea type="text" id="form28" class="md-textarea form-control" rows="1" name="new-visits"></textarea>
+            <label for="form28">Другие задачи (Опишите)</label>
+          </div>
+
+         
+        </div>
+
+
+        <!-- 5 -->
+        <div class="tab">
+          <h4 class="h4-responsive w-100">5. Какого типа должен быть Ваш сайт (выберите вариант)</h4>
+          
+          <div class="custom-control custom-radio">
+            <input type="radio" class="custom-control-input" id="defaultGroupExample1" name="type-site" value='1'>
+            <label class="custom-control-label" for="defaultGroupExample1">Промо-сайт (продвижение товаров и услуг)</label>
+          </div>
+
+          
+          <div class="custom-control custom-radio">
+            <input type="radio" class="custom-control-input" id="defaultGroupExample2" name="type-site" value='2'>
+            <label class="custom-control-label" for="defaultGroupExample2">Сайт-визитка (общая информация о компании и ее координаты)</label>
+          </div>
+
+          
+          <div class="custom-control custom-radio">
+            <input type="radio" class="custom-control-input" id="defaultGroupExample3" name="type-site" value='3'>
+            <label class="custom-control-label" for="defaultGroupExample3">Корпоративный сайт (Подробная информация о компании. Каталог товаров и/или услуг, Без возможности оформления заказов на сайте.)</label>
+          </div>
+
+          <div class="custom-control custom-radio">
+            <input type="radio" class="custom-control-input" id="defaultGroupExample4" name="type-site" value='4'>
+            <label class="custom-control-label" for="defaultGroupExample4">Интернет-магазин (продажа товаров и/или услуги с заказом и оплатой товаров)</label>
+          </div>
+
+          <div class="custom-control custom-radio">
+            <input type="radio" class="custom-control-input" id="defaultGroupExample5" name="type-site" value='5'>
+            <label class="custom-control-label" for="defaultGroupExample5">Информационный портал (предоставление посетителям большого объема различной информации)</label>
+          </div>
+
+          <div>
+            <div class="custom-control custom-radio">
+              <input type="radio" class="custom-control-input" id="defaultGroupExample6" name="type-site" value='6'>
+              <label class="custom-control-label" for="defaultGroupExample6">Ваш вариант (опишите)</label>
+            </div>
+            <textarea type="text" id="form29" class="md-textarea form-control mb-3" rows="2" name="text-type-site"></textarea>
+          </div>
+          
+        </div>
+
+
+        <!-- 6 -->
+        <div class="tab">
+          <h4 class="h4-responsive w-100">6. Дополнительные языковые версии сайта</h4>
+
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="defaultChecked9" name="lang[]" value="A">
+            <label class="custom-control-label" for="defaultChecked9">Английская версия</label>
+          </div>
+
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="defaultChecked10" name="lang[]" value="B">
+            <label class="custom-control-label" for="defaultChecked10">Немецкая версия</label>
+          </div>
+
+          <div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="defaultCheckedDisabled1" checked disabled>
+              <label class="custom-control-label" for="defaultCheckedDisabled1">Другая версия (описать)</label>
+            </div>
+            <textarea type="text" id="form30" class="md-textarea form-control" rows="2" name="langOther"></textarea>
+          </div>
+        </div>
+
+
+
+        <!-- 7 -->
+        <div class="tab">
+          <h4 class="h4-responsive w-100">7. На какой информации должен акцентировать дизайн, внимание посетителя сайта? (да/нет)</h4>
+          
+          <table class="table table-striped">
+            <tbody>
+              <tr>
+                <th scope="row">На слогане, лозунге компании (предоставьте слоган)</th>
+                <td>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="defaultInline17" name="slogan" value="Да">
+                    <label class="custom-control-label" for="defaultInline17">Да</label>
+                  </div>
+      
+                  
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="defaultInline18" name="slogan" value="Нет">
+                    <label class="custom-control-label" for="defaultInline18">Нет</label>
+                  </div>
+                </td>
+              </tr>
+
+
+              <tr>
+                <th scope="row">На информации о компании</th>
+                <td>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="defaultInline19" name="infoAboutCompany" value="Да">
+                    <label class="custom-control-label" for="defaultInline19">Да</label>
+                  </div>
+      
+                  
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="defaultInline20" name="infoAboutCompany" value="Нет">
+                    <label class="custom-control-label" for="defaultInline20">Нет</label>
+                  </div>
+                </td>
+              </tr>
+
+
+
+              <tr>
+                <th scope="row">На услугах компании</th>
+                <td>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="defaultInline21" name="servicesCompany" value="Да">
+                    <label class="custom-control-label" for="defaultInline21">Да</label>
+                  </div>
+      
+                  
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="defaultInline22" name="servicesCompany" value="Нет">
+                    <label class="custom-control-label" for="defaultInline22">Нет</label>
+                  </div>
+                </td>
+              </tr>
+
+
+              <tr>
+                <th scope="row">На координатах местоположения офиса компании</th>
+                <td>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="defaultInline23" name="addressCompany" value="Да">
+                    <label class="custom-control-label" for="defaultInline23">Да</label>
+                  </div>
+      
+                  
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="defaultInline24" name="addressCompany" value="Нет">
+                    <label class="custom-control-label" for="defaultInline24">Нет</label>
+                  </div>
+                </td>
+              </tr>
+
+
+              <tr>
+                <th scope="row">На визуальных образах, отражающих деятельность и подачу компании на рынке</th>
+                <td>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="defaultInline25" name="visual-image" value="Да">
+                    <label class="custom-control-label" for="defaultInline25">Да</label>
+                  </div>
+      
+                  
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="defaultInline26" name="visual-image" value="Нет">
+                    <label class="custom-control-label" for="defaultInline26">Нет</label>
+                  </div>
+                </td>
+              </tr>
+
+
+              <tr>
+                <th scope="row">На новинках продукции и услуг компании</th>
+                <td>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="defaultInline27" name="newProducts" value="Да">
+                    <label class="custom-control-label" for="defaultInline27">Да</label>
+                  </div>
+      
+                  
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="defaultInline28" name="newProducts" value="Нет">
+                    <label class="custom-control-label" for="defaultInline28">Нет</label>
+                  </div>
+                </td>
+              </tr>
+
+
+              <tr>
+                <th scope="row">На уникальности услуг и продукции компании</th>
+                <td>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="defaultInline29" name="uniqueness-of-services" value="Да">
+                    <label class="custom-control-label" for="defaultInline29">Да</label>
+                  </div>
+      
+                  
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="defaultInline30" name="uniqueness-of-services" value="Нет">
+                    <label class="custom-control-label" for="defaultInline30">Нет</label>
+                  </div>
+                </td>
+              </tr>
+
+
+              <tr>
+                <th scope="row">На выгодной ценовой политике</th>
+                <td>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="defaultInline31" name="firm-persons" value="Да">
+                    <label class="custom-control-label" for="defaultInline31">Да</label>
+                  </div>
+      
+                  
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="defaultInline32" name="firm-persons" value="Нет">
+                    <label class="custom-control-label" for="defaultInline32">Нет</label>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="md-form">
+            <textarea type="text" id="form25" class="md-textarea form-control" rows="1" name="accentuate-the-design-other"></textarea>
+            <label for="form30">Дополнительно (опишите)</label>
+          </div>
+        </div>
+
+
+        <!-- 8 -->
+        <div class="tab">
+          <h4 class="h4-responsive w-100">8. Технические требования к сайту (выделить подходящие варианты, где необходимо — дать развернутый ответ)</h4>
+
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Ориентирование на размер экрана (в дюймах)</th>
+                <td>Mark</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+          
+
+          
+
+          
+          <div style="overflow:auto;">
+            <div style="float:right;">
+              <button class="btn text-white m-0 p-2" type="button" id="prevBtn" onclick="nextPrev(-1)">Предыдущая</button>
+              <button class="btn bg-site text-white m-0 p-2" type="button" id="nextBtn" onclick="nextPrev(1)">Следующая</button>
+            </div>
+          </div>
+
+          <div style="text-align:center;margin-top:40px;">
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

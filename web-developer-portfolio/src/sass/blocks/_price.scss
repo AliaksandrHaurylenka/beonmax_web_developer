@@ -1,0 +1,84 @@
+//Мой код
+// .price {
+//     padding-top: 60px;
+//     .divider {
+//         margin: 25px auto 0;
+//     }
+//     &-type {
+//         padding: 60px 50px 0 75px;
+//         display: grid;
+//         grid-template-columns: 340px 340px;
+//         row-gap: 15px;
+//         justify-content: space-between;
+//         align-content: space-between;
+//         &__block {
+//             display: grid;
+//             grid-template: minmax(21px, auto) minmax(14px, auto) / 240px 100px;
+//             row-gap: 5px;
+//             justify-content: space-between;
+//             align-content: space-between;
+//         }
+//     }
+//     &__title {
+//         position: relative;
+//         @include before_circle(-10%, 25%);
+//         &:before {
+//             width: 15px;
+//             height: 15px;
+//             transform: translateY(-25%);
+//         }
+//     }
+//     .description {
+//         grid-column: 1/3;
+//     }
+// }
+//Конец
+
+
+
+//Код наставника
+.price {
+    padding-top: 60px;
+    .divider {
+       margin: 25px auto 0;
+    }
+    &__wrapper {
+        margin-top: 60px;
+        padding: 0 60px;
+        display: grid;
+        grid-template: repeat(3, minmax(45px, auto)) / repeat(2, 365px);
+        grid-auto-rows: minmax(45px, auto);
+        row-gap: 15px;
+        justify-content: space-between;
+    }
+    &__item {
+        position: relative;
+        display: grid;
+        grid-template: repeat(2, minmax(21px, auto)) / repeat(2, auto);
+        row-gap: 5px;
+        padding-left: 25px;
+        &:before {
+            content: '';
+            width: 15px;
+            height: 15px;
+            background-color: $main-color;
+            border-radius: 100%;
+            position: absolute;
+            top: 5px;
+        }
+    }
+    &__type, &__count {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    &__count {
+        justify-self: end;
+    }
+    &__descr {
+        grid-column: 1 / 3;
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+//Конец
