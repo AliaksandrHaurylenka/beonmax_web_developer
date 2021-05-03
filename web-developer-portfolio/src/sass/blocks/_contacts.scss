@@ -14,4 +14,16 @@
             width: 100%;
         }
     }
+    .divider {
+        margin-top: 0;
+    }
+    &__text {
+        margin-top: 20px;
+    }
+    &__links {
+        margin-top: 20px;
+        a {
+            margin-right: 23px;
+        }
+    }
 }
