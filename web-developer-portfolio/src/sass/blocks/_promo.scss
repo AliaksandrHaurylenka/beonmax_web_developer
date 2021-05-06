@@ -5,6 +5,7 @@
     position: relative;
     &__title {
         width: 503px;
+        margin-top: 10px;
     }
     &__subtitle {
         padding-left: 10px;
@@ -14,6 +15,7 @@
 
     }
     &__btns {
+        margin-top: 25px;
         width: 250px;
         display: flex;
         align-items: center;
