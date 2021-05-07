@@ -12,6 +12,14 @@
         display: flex;
     }
     .about {
+        padding-top: 40px;
+        .title {
+            &_fz36 {
+                margin-top: 26px;
+                font-size: 31px;
+                line-height: 36px;
+            }  
+        }
         &__wrapper {
             grid-template-columns: 400px 500px;
             column-gap: 50px;
@@ -26,6 +34,45 @@
             }
         }
     }
+    .resume {
+        padding-top: 40px;
+        .title {
+            &_fz36 {
+                margin-top: 26px;
+                font-size: 31px;
+                line-height: 36px;
+            }  
+        }
+        &__wrapper {
+            grid-template-columns: repeat(2, 400px);
+            column-gap: 15px;
+        }
+    }
+    .skills {
+        padding-top: 60px;
+        &__grid {
+            grid-template-columns: repeat(auto-fit, 270px);
+            justify-content: space-between;
+        }
+        &__sliders {
+            margin-top: 80px;
+            grid-template-columns: repeat(auto-fit, 350px);
+            justify-content: space-between;
+            grid-auto-rows: minmax(70px, auto);
+        }
+    }
+    .portfolio {
+        &__works {
+            grid-template-columns: repeat(auto-fit, 280px);
+            justify-content: space-around;
+            row-gap: 35px;
+            .horizontal, .vertical {
+                grid-row: unset;
+                grid-column: unset;
+            }
+        } 
+    }
+       
 }
 
 @media (max-width: 1140px) {
@@ -54,12 +101,6 @@
         }
     }
     .about {
-        padding-top: 65px;
-        .title {
-            &_fz36 {
-                font-size: 31px;
-            }  
-        }
         &__wrapper {
             grid-template-columns: 300px 380px;
             column-gap: 40px;
@@ -71,6 +112,37 @@
             &-item {
                 grid-template-columns: 40px 334px;
                 column-gap: 12px;
+            }
+        }
+    }
+    .resume {
+        &__wrapper {
+            grid-template-columns: 574px;
+            grid-template-rows: repeat(2, minmax(370px, auto));
+            grid-auto-rows: auto;
+            row-gap: 30px;
+            padding-top: 37px;
+        }
+       &__item {
+            
+        }
+    }
+    .skills {
+        padding-top: 5px;
+        .title {
+            &_fz36 {
+                font-size: 31px;
+            }
+        }
+        &__sliders {
+            margin-top: 60px;
+            grid-template-columns: repeat(auto-fit, 337px);
+        }
+    }
+    .portfolio {
+        .title {
+            &_fz36 {
+                font-size: 31px;
             }
         }
     }
@@ -99,7 +171,6 @@
         }
     }
     .about {
-        padding-top: 30px;
         &__wrapper {
             grid-template-columns: 1fr;
         }
@@ -116,6 +187,28 @@
             &-item {
                 grid-template-columns: 40px 200px;
             }
+        }
+    }
+    .resume {
+        &__wrapper {
+            grid-template-columns: 509px;
+            row-gap: unset;
+            padding: 37px 15px;
+        }
+    }
+    .skills {
+        &__grid {
+            grid-template-columns: repeat(auto-fit, 253px);
+        }
+        &__sliders {
+            margin-top: 60px;
+            grid-template-columns: repeat(auto-fit, 247px);
+        }
+    }
+    .portfolio {
+        &__works {
+            grid-template: repeat(auto-fit, 265px) / repeat(auto-fit, 265px);
+            row-gap: 5px;
         }
     }
 }
@@ -150,7 +243,6 @@
         }
     }
     .about {
-        padding-top: 15px;
         .title {
             &_fz36 {
                 font-size: 24px;
@@ -166,6 +258,70 @@
                 grid-template-columns: 40px 240px;
                 column-gap: 20px;
             }
+        }
+    }
+    .resume {
+        .title {
+            &__subtitle {
+                font-size: 24px;
+            }
+            &_fz14 {
+                margin-bottom: 0;
+            }
+        }
+        .divider {
+            margin-top: 15px;
+        }
+        &__wrapper {
+            grid-template-columns: 293px;
+            justify-content: center;
+            padding: 40px 3px;
+
+        }
+        &__item {
+            &-location {
+                line-height: 18px;
+            }
+            &-body {
+                padding-top: 10px;
+                padding-left: 23px;
+            }
+        }
+    }
+    .skills {
+        padding-top: 46px;
+        .title_fz36 {
+            margin-top: 26px;
+            font-size: 24px;
+            line-height: 30px;
+        }
+        .divider {
+            margin-top: 15px;
+        }
+        &__grid {
+            margin-top: 20px;
+            grid-template-columns: repeat(auto-fit, 270px);
+            justify-content: center;
+        }
+        &__sliders {
+            margin-top: 48px;
+            grid-template-columns: repeat(auto-fit, 300px);
+            justify-content: center;
+        }
+    }
+    .portfolio {
+        padding-top: 47px;
+        .title {
+            &_fz36 {
+                font-size: 24px;
+            }
+        }
+        .divider {
+            margin-top: 15px;
+        }
+        &__works {
+            padding-top: 40px;
+            grid-template: repeat(auto-fit, 280px) / repeat(auto-fit, 280px);
         }
     }
 }

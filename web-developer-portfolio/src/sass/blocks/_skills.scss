@@ -1,5 +1,5 @@
 .skills {
-    margin-top: 126px;
+    padding-top: 126px;
     .divider {
         margin: 25px auto 0;
     }
@@ -31,9 +31,9 @@
         margin-top: 128px;
         display: grid;
         grid-template: repeat(2, minmax(70px, auto)) / repeat(3, 350px);
+        grid-auto-rows: minmax(70px, auto);
         column-gap: 45px;
         row-gap: 35px;
-        grid-auto-rows: minmax(100px, auto);
         &-block {
             display: grid;
             grid-template: minmax(21px, auto) 14px / 200px 35px;
