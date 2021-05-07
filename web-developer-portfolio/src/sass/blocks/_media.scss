@@ -35,7 +35,7 @@
         }
     }
     .resume {
-        padding-top: 40px;
+        padding-top: 46px;
         .title {
             &_fz36 {
                 margin-top: 26px;
@@ -43,26 +43,53 @@
                 line-height: 36px;
             }  
         }
+        .divider {
+            margin-top: 15px;
+        }
         &__wrapper {
-            grid-template-columns: repeat(2, 400px);
+            padding: 40px 7px;
+            grid-template-columns: repeat(2, 465px);
             column-gap: 15px;
         }
     }
     .skills {
-        padding-top: 60px;
+        padding-top: 46px;
+        .title {
+            &_fz36 {
+                margin-top: 26px;
+                font-size: 31px;
+                line-height: 36px;
+            }  
+        }
+        .divider {
+            margin-top: 15px;
+        }
         &__grid {
+            padding-top: 40px;
             grid-template-columns: repeat(auto-fit, 270px);
             justify-content: space-between;
         }
         &__sliders {
-            margin-top: 80px;
+            padding-top: 50px;
             grid-template-columns: repeat(auto-fit, 350px);
             justify-content: space-between;
             grid-auto-rows: minmax(70px, auto);
         }
     }
     .portfolio {
+        padding-top: 46px;
+        .title {
+            &_fz36 {
+                margin-top: 26px;
+                font-size: 31px;
+                line-height: 36px;
+            }  
+        }
+        .divider {
+            margin-top: 15px;
+        }
         &__works {
+            padding-top: 40px;
             grid-template-columns: repeat(auto-fit, 280px);
             justify-content: space-around;
             row-gap: 35px;
@@ -117,11 +144,10 @@
     }
     .resume {
         &__wrapper {
-            grid-template-columns: 574px;
+            grid-template-columns: 706px;
             grid-template-rows: repeat(2, minmax(370px, auto));
             grid-auto-rows: auto;
             row-gap: 30px;
-            padding-top: 37px;
         }
        &__item {
             
@@ -135,7 +161,6 @@
             }
         }
         &__sliders {
-            margin-top: 60px;
             grid-template-columns: repeat(auto-fit, 337px);
         }
     }
@@ -191,9 +216,7 @@
     }
     .resume {
         &__wrapper {
-            grid-template-columns: 509px;
-            row-gap: unset;
-            padding: 37px 15px;
+            grid-template-columns: 526px;
         }
     }
     .skills {
@@ -201,7 +224,6 @@
             grid-template-columns: repeat(auto-fit, 253px);
         }
         &__sliders {
-            margin-top: 60px;
             grid-template-columns: repeat(auto-fit, 247px);
         }
     }
@@ -269,14 +291,9 @@
                 margin-bottom: 0;
             }
         }
-        .divider {
-            margin-top: 15px;
-        }
         &__wrapper {
-            grid-template-columns: 293px;
+            grid-template-columns: 286px;
             justify-content: center;
-            padding: 40px 3px;
-
         }
         &__item {
             &-location {
@@ -289,38 +306,25 @@
         }
     }
     .skills {
-        padding-top: 46px;
         .title_fz36 {
-            margin-top: 26px;
             font-size: 24px;
-            line-height: 30px;
-        }
-        .divider {
-            margin-top: 15px;
         }
         &__grid {
-            margin-top: 20px;
             grid-template-columns: repeat(auto-fit, 270px);
             justify-content: center;
         }
         &__sliders {
-            margin-top: 48px;
             grid-template-columns: repeat(auto-fit, 300px);
             justify-content: center;
         }
     }
     .portfolio {
-        padding-top: 47px;
         .title {
             &_fz36 {
                 font-size: 24px;
             }
         }
-        .divider {
-            margin-top: 15px;
-        }
         &__works {
-            padding-top: 40px;
             grid-template: repeat(auto-fit, 280px) / repeat(auto-fit, 280px);
         }
     }
