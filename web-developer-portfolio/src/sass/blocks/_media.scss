@@ -20,6 +20,9 @@
                 line-height: 36px;
             }  
         }
+        .divider {
+            margin-top: 15px;
+        }
         &__wrapper {
             grid-template-columns: 400px 500px;
             column-gap: 50px;
@@ -109,13 +112,16 @@
         }
     }
     .contacts {
-        padding-top: 40px;
+        padding-top: 46px;
         .title {
             &_fz36 {
                 margin-top: 26px;
                 font-size: 31px;
                 line-height: 36px;
             }  
+        }
+        .divider {
+            margin-top: 15px;
         }
         &__wrapper {
             grid-template-columns: 380px 470px;
@@ -204,7 +210,6 @@
         }
     }
     .contacts {
-        // padding-top: 40px;
         &__wrapper {
             grid-template-columns: 300px 395px;
             padding-left: 0;
@@ -212,6 +217,10 @@
         }
         &__form {
             grid-template-columns: repeat(2, 190px);
+        }
+        &__btn {
+            padding-top: 0;
+            padding-bottom: 0;
         }
     }
 }
@@ -279,6 +288,20 @@
     .price {
         &__wrapper {
             justify-content: center;
+        }
+    }
+    .contacts {
+        &__wrapper {
+            grid-template-columns: 1fr;
+        }
+        &__photo img {
+            height: 340px;
+        }
+        &__descr {
+            padding-top: 20px;
+        }
+        &__form {
+            grid-template-columns: repeat(2,250px);
         }
     }
 }
@@ -379,6 +402,53 @@
     .price {
         &__wrapper {
             grid-template-columns: repeat(auto-fit, 300px);
+        }
+    }
+    .contacts {
+        padding-bottom: 50px;
+        &__photo img {
+            display: none;
+        }
+        &__descr {
+            padding-top: 0;
+        }
+        &__form {
+            display: block;
+            input {
+                height: 45px;
+            }
+        }
+        &__input:nth-child(2) {
+            margin-top: 30px;
+        }
+        &__textarea {
+            margin-top: 30px;
+            height: 143px;
+        }
+        &__triggers {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap-reverse;
+            align-items: center;
+            justify-content: center;
+        }
+        &__policy {
+            order: 0;
+            width: 180px;
+        }
+        &__btn {
+            padding: 12px 26px;
+           
+        }
+    }
+}
+
+
+@media (max-width: 443px) {
+    .contacts {
+        &__btn {
+            margin-top: 20px;
         }
     }
 }
