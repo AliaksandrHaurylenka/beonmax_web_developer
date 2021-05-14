@@ -1,0 +1,13 @@
+.title {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 32px;
+    color: $text-color;
+    &_fz20 {
+        font-size: 20px;
+    }
+    &_fz16 {
+        font-size: 16px;
+        font-weight: 400;
+    }
+}

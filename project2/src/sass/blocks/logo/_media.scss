@@ -1,0 +1,52 @@
+@media (min-width: 320px) {
+    .logo {
+        background: $main-color;
+        margin-right: 20px;
+        border-radius: 0px 50px 50px 0px;
+        padding: 23px 0;
+        // &__wrapper {
+        //     background: $main-color;
+        //     margin-right: 20px;
+        //     border-radius: 0px 50px 50px 0px;
+        //     padding: 23px 0;
+        // }
+        &__text {
+            text-align: center;
+            color: $text-color;
+            // font-family: Manrope;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 20px;
+            span {
+                color: $btn-color;
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    .logo {
+        margin-right: 40px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .logo {
+        margin-right: 60px;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .logo {
+        margin-right: 120px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .logo {
+        margin-right: 162px;
+    }
+}

@@ -1,0 +1,48 @@
+@media (min-width: 320px) {
+    .forecast {
+        &__title {
+            padding-top: 52px;
+        }
+        h1 {
+            font-weight: normal;
+            line-height: 24px;
+            padding-top: 16px;
+        }
+        &__btn {
+            margin-top: 32px;
+        }
+        &__diagramm {
+            border: 2px solid $main-color;
+            border-radius: 18px;
+            margin-top: 42px;
+            padding: 23px 20px 17px;
+        }
+        &__weight {
+            padding-top: 24px;
+            position: relative;
+        }
+        &__scale {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            .line {
+                border: 1px solid #E1E1E1;
+                width: 213px;
+                
+            }
+        }
+        &__line {
+            position: absolute;
+            top: 53px;
+            right: 0;
+        }
+        &_months {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 17px;
+        }
+    }
+}
+
