@@ -14,8 +14,9 @@
         &__diagramm {
             border: 2px solid $main-color;
             border-radius: 18px;
-            margin-top: 42px;
+            margin: 42px auto;
             padding: 23px 20px 17px;
+            width: 280px;
         }
         &__weight {
             padding-top: 24px;
@@ -42,6 +43,73 @@
             justify-content: space-between;
             align-items: center;
             margin-top: 17px;
+        }
+        &__plans {
+            position: relative;
+        }
+        &__plan {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 20px;
+            border: 2px solid $main-color;
+            border-radius: 20px;
+            padding: 15px 40px 16px 23px;
+            position: relative;
+            background-color: #fff;
+            z-index: 10;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0; 
+                left: 0;
+                width: 70px;
+                height: 100%;
+                background: $main-color;
+                border-radius: 16px;
+                z-index: -1;
+            }
+        }
+        &__text {
+            padding-left: 41px;
+            line-height: 24px;
+            color: $text-color;
+        }
+
+        &__circle {
+            position: absolute;
+            top: 65%;
+            right: -40px;
+            background-color: $main-color;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            z-index: -1;
+        }
+        &__semicircle {
+            position: absolute;
+            top: 85%;
+            right: -50px;
+            background-color: $main-color;
+            width: 280px;
+            height: 325px;
+            border-radius: 100% 0 0 0;
+            z-index: -1;
+        }
+        &__girl {
+            position: absolute;
+            top: 88%;
+            right: -10px;
+            z-index: 20;
+        }
+    }
+}
+
+
+@media (min-width: 576px) {
+    .forecast {
+        &__circle {
+            // top: 280px;
         }
     }
 }
